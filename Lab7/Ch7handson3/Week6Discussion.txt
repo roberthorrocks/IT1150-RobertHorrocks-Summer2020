@@ -1,0 +1,17 @@
+A front end developer uses the skills they have acquired in web design and front end technologies to create and deploy user interfaces to static websites, dynamic web sites and web applications. 
+
+Front end developers use coding skills in HTML, CSS and JavaScript (JS).
+
+Front end developer get a feel for the user experience and bring that into the website design and implementation. 
+
+They create design, layout, contect, navigation, add images, links, buttons and forms. 
+
+They make sure their designs are compatible in different browsers, including mobile devices. 
+
+They code the search engine optimization, and they test the website for usability and fix bugs. 
+
+In eight weeks, this has been a quick trip in learning the basics of HTML, CSS and (soon) JS. I definitely feel comfortable with coding basic web pages now with the elements of this class. Learning how to code, combined with some of the technologies learned in future classes, will help me in my goal of coding websites that can bring me a side or full time technology income. 
+
+
+
+ 
