@@ -205,12 +205,20 @@ function Homework1()
             /*Calculate the sum of odd numbers between 5 and 150 (using "for" loop) 
             Use the % operator to decide if a number is odd or even. 
             (X % 2) gives the remainder when divided by 2.*/
-            for(var n = 5; n < 150; n+=2) 
+            for(var n = 5; n < 150; n++) 
             {
-                console.log(n);
+                var y = 0;
+                
+                if( n % 2 )
+                {
+                y = y + n;
+                }
+                
+
 
             }
 
+            console.log(y);
 }
 
 function Homework2()
@@ -221,35 +229,31 @@ function Homework2()
             */
 
            var num = prompt("Enter a score to see your grade");
-           var isTropical = false; //boolean variable: True or False
+           var grade = "X";
 
-           switch(fruit)
+           switch(true)
            {
-               case "banana":
-                   isTropical = true;
+               case num <= 69:
+                   grade = "F";
                    break;
        
-               case "papaya":
-                   isTropical = true;
+               case num >= 70 && num <=79:
+                    grade = "C";
+                   break;
+
+                case num >= 80 && num <=89:
+                    grade = "B";
                    break;
        
-               case "tomato":
-                   isTropical = false;
-                   break;
-       
-               case "mango":
-                   isTropical = true;
-                   break;
-       
-               case "watermelon":
-                   isTropical = true;
+               case (num >= 90):
+                   grade = "A";
                    break;
        
                default:
-                   isTropical = false;            
+                   //grade = false;            
            }
        
-           alert("Is "+ fruit+ " tropical?"+ isTropical );
+           alert("Your grade is "+ grade );
 
 }
 
@@ -257,10 +261,33 @@ function Homework3()
 {
             /*Prompt the user to enter a number
             Display the multiples of a number between 1 and 200(use any loop)           
-            Also display the total number of multiples of the number also
-            */
+            Also display the total number of multiples of the number also*/
+            
+           var num = prompt("Enter a number between 1 and 200");
+            /*counter = 0;
 
-           alert("This is the answer for Homework 3");
+            while (counter < 201)
+            {
+                if(num/counter % 0)
+                {
+                    console.log(num);
+                    console.log(counter);
+                    counter++;
+                }
+
+            }*/
+            var totalMultiples = 0;
+
+            for(var i=1;i<=200;i++)
+            {
+                if (i % num == 0)//This means it is a multiple
+                
+                    totalMultiples++;
+                    
+            }
+            console.log("Total multiples of "+ num + " = "+totalMultiples);
+            alert("Total multiples of "+ num + " = "+totalMultiples);
+           
 
 }
 
