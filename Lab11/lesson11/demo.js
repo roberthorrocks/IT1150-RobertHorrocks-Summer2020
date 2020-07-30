@@ -205,9 +205,11 @@ function Homework1()
             /*Calculate the sum of odd numbers between 5 and 150 (using "for" loop) 
             Use the % operator to decide if a number is odd or even. 
             (X % 2) gives the remainder when divided by 2.*/
+            
+            var y = 0;
             for(var n = 5; n < 150; n++) 
             {
-                var y = 0;
+                
                 
                 if( n % 2 )
                 {
@@ -218,7 +220,7 @@ function Homework1()
 
             }
 
-            console.log(y);
+            console.log("The sum of odd numbers between 5 and 150 is: " + y);
 }
 
 function Homework2()
@@ -264,29 +266,22 @@ function Homework3()
             Also display the total number of multiples of the number also*/
             
            var num = prompt("Enter a number between 1 and 200");
-            /*counter = 0;
-
-            while (counter < 201)
-            {
-                if(num/counter % 0)
-                {
-                    console.log(num);
-                    console.log(counter);
-                    counter++;
-                }
-
-            }*/
-            var totalMultiples = 0;
+            
+            var counter1 = 0;
 
             for(var i=1;i<=200;i++)
             {
                 if (i % num == 0)//This means it is a multiple
-                
-                    totalMultiples++;
+                {
+                    console.log(i);
+                    counter1++;
+                    
+                }     
                     
             }
-            console.log("Total multiples of "+ num + " = "+totalMultiples);
-            alert("Total multiples of "+ num + " = "+totalMultiples);
+            
+            console.log("Total multiples of "+ num + " = "+counter1);
+           
            
 
 }
