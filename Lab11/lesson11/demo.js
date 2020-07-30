@@ -286,13 +286,63 @@ function Homework3()
 
 }
 
+
+function DisplayABTriangle(num)
+{
+    var strRow="";
+    var totalStars=0;
+    for (var i=1;i<=num;i++){        
+        strRow = ""      ;//Reset strRow
+        for (var j=1; j<=i;j++)
+        {
+            //if number of rows is 1, row = "A"
+            //if number of rows is 2, row = "A" + "B"
+            //row is number of sets of As and Bs
+            if(num = 1)
+            { 
+                strRow = "A";
+            }
+            else if (num = 2)
+            {
+
+                strRow = "A" + "B"
+            }
+            
+            else if (num > 2 && num % 2 == 0)
+            {
+                strRow = "ABA";
+            }
+
+            else (num > 2)
+            {
+
+                strRow = "ABAB";
+            }
+            strRow = strRow + "*";
+            totalStars++;
+        }        
+        //Now we have a row. Lets display the row
+        console.log(strRow);     
+    }
+    return totalStars;
+}
+
+function CountStarsInABTriangle()
+{
+    var num = prompt("Enter the number of rows for your triangle");
+    var total = DisplayABTriangle(num);
+    console.log("Total stars in a triangle with "+ num + " rows = "+ total);
+}
+
 function Homework4()
 {
             /*Prompt the user to enter the rows for the triangle
             Print a triangle made up of A and B as many rows as I say (pass the rows as a parameter to the function)
             first row will be A; second row will be AB; third row will be ABA; fourth row will be ABAB..etc*/
 
-            alert("This is the answer for Homework 4");
+            var num = prompt("Enter the number of rows for your triangle");
+            DisplayABTriangle(num);
+            
 
 }
 
@@ -300,7 +350,6 @@ function Homework5()
 {
             /*Prompt the user to enter the rows for the triangle
             In the above triangle, count the number of As and number of Bs*/
-
-            alert("This is the answer for Homework 5");
+            CountStarsInABTriangle();
 
 }
