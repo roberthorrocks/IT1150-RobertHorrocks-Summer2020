@@ -118,7 +118,18 @@ function Homework()
     /*Task 1 - 
     Get the paragraph with id="copyright" 
     and update its background color to yellow
+    
+    
+
+
+
     */
+
+    var copyright = document.getElementById("copyright");
+    
+    copyright.style.backgroundColor = "yellow";
+
+    
 
     /*Task2
     Get all buttons by tagname "button" 
@@ -126,11 +137,36 @@ function Homework()
     assign the background color to lightgreen
     */
 
+    var button1 = document.getElementsByTagName("button");
+    console.log("Number of buttons: " + button1.length);
+
+    for(var i=0; i<button1.length; i++)
+
+    {
+        
+        button1[i].style.color = "lightgreen";
+        
+
+    }
+
+    
+
     /*Task3
     Get all paragraphs by using the tagname "p"
     loop through each element
     and assign the classname "green"
     */
+
+    var paragraph1 = document.getElementsByTagName("p");
+    console.log("Number of paragraphs: " + paragraph1.length);
+    for(var i=0; i<paragraph1.length; i++)
+
+    {
+
+        paragraph1[i].className="green";
+        console.log("Changed to green");
+
+    }
 
     /*Task 4
     Create a new link
@@ -139,5 +175,12 @@ function Homework()
     assign ClassA as its style
     Add it as a child to the the div with id="parent"
     */
+
+   var parent1 = document.getElementById("parent");
+   var div1 = document.createElement("a");
+   div1.href="http://www.tri-c.edu"
+   div1.innerText="Link";
+   div1.classList.add("ClassA");
+   parent1.appendChild(div1);
     
 }
